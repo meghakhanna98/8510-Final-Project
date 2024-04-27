@@ -200,10 +200,6 @@ lda_post_1888 <- LDA(dtm_post_1888, k = 8, control = list(seed = 1234))
 ```
 
 ```{r}
-
-```
-
-```{r}
 #10 Analyzing topics by extracting the terms for each topic and their probabilities
 library(broom)
 
@@ -224,7 +220,7 @@ top_terms_pre_1888 <- topics_pre_1888 %>%
 ```
 
 ```{r}
-# Filter topics for post-1888
+#12 Filter topics for post-1888
 top_terms_post_1888 <- topics_post_1888 %>%
   filter(topic %in% 1:5) %>%
   group_by(topic) %>%
@@ -235,6 +231,7 @@ top_terms_post_1888 <- topics_post_1888 %>%
 ```
 
 ```{r}
+#
 library(ggplot2)
 library(tidytext) 
 
