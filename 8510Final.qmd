@@ -43,3 +43,13 @@ custom_stopwords <- c("aberdeen", "weekly", "times", "journal", "article", "said
 all_stopwords <- c(stopwords, custom_stopwords)
 
 ```
+
+```{r}
+#4 Now I am preprocessing the text and tokenizing
+tidy_casebook <- casebook_final_2 %>%
+  unnest_tokens(word, News.Reports) %>%                 
+  filter(!word %in% all_stopwords) %>%                  
+  mutate(word = gsub("[\\d-]+", "", word)) %>%         
+  anti_join(data.frame(word = stopwords::stopwords(language = "en", source = "snowball")), by = "word")  
+
+```
