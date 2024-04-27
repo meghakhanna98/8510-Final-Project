@@ -17,3 +17,16 @@ My research questions are as follows:
 The infamous Jack the Ripper murders of 1888, targeting several sex workers in London’s Whitechapel district, became a stark illustration of the interplay between media sensationalism, public fear, and the stigmatization of sex workers. Jack the Ripper’s name continues to resonate throughout criminal history, not just for the horrific nature of the crimes but also for the media frenzy that erupted in late Victorian England.
 
 This analysis aims to explore the differential portrayal of Jack the Ripper compared to his victims through the lens of historical newspaper articles. By analyzing the frequency and context of words used, we can gain insights into the narrative and societal perceptions constructed by the media of that era.
+
+```{r}
+#1 Loading libraries
+library(tm)
+library(topicmodels)
+library(tidytext)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(stringr)
+
+```
