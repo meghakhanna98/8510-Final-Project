@@ -4,4 +4,10 @@ author: "Megha Khanna"
 date: "04/15/2024"
 ---
 
-## 
+For my Final project, I have utilized various codes to analyze a dataset of newspaper publications concerning Jack the Ripper and his notorious murders.
+
+My research questions are as follows:
+
+1.  How does the frequency and context of terms associated with Jack the Ripper differ from those related to his victims in historical newspaper articles, and what does this tell us about societal attitudes towards crime and victimhood in late Victorian England?
+
+2.  How did the topics covered in newspaper reports change before and after 1888, the year of Jack the Ripper's crimes? What can this reveal about the influence of these events on public discourse and media focus?
