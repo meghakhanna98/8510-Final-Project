@@ -149,3 +149,22 @@ all_stop_words <- bind_rows(stop_words, custom_stop_words) %>%
   distinct() 
 
 ```
+
+```{r}
+# For pre-1888
+pre_1888_tidy <- pre_1888 %>%
+  unnest_tokens(word, News.Reports) %>%
+  anti_join(all_stop_words, by = "word") %>%
+  filter(str_length(word) > 1)  
+
+```
+
+```{r}
+
+# For post-1888
+post_1888_tidy <- post_1888 %>%
+  unnest_tokens(word, News.Reports) %>%
+  anti_join(all_stop_words, by = "word") %>%
+  filter(str_length(word) > 1)
+
+```
