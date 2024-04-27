@@ -126,5 +126,26 @@ library(stringr)
 ```
 
 ```{r}
+#2 Creating separate columnsdor Year, Month and Day
+casebook.new <- casebook_final_2 %>%
+  mutate(date = as.Date(Full.Date, format = "%Y-%m-%d"),  
+         Year = year(date),
+         Month = month(date),
+         Day = day(date))
+custom_stop_words <- c("aberdeen", "weekly", "times", "journal", "article", "said", "dr", "mr", "b", "q.c", "c", "b.a", "w", "a", "i", "u", "m", "s", "t")
+head(casebook.new)
+
+```
+
+```{r}
+#3 Filtering before and after 1888
+
+pre_1888 <- casebook.new %>% filter(Year < 1888)
+post_1888 <- casebook.new %>% filter(Year >= 1888)
+
+data(stop_words)  # Load standard stop words from tidytext
+custom_stop_words <- tibble(word = custom_stop_words, lexicon = rep("custom", length(custom_stop_words)))
+all_stop_words <- bind_rows(stop_words, custom_stop_words) %>%
+  distinct() 
 
 ```
