@@ -151,7 +151,7 @@ all_stop_words <- bind_rows(stop_words, custom_stop_words) %>%
 ```
 
 ```{r}
-# For pre-1888
+#4 For pre-1888
 pre_1888_tidy <- pre_1888 %>%
   unnest_tokens(word, News.Reports) %>%
   anti_join(all_stop_words, by = "word") %>%
@@ -161,10 +161,113 @@ pre_1888_tidy <- pre_1888 %>%
 
 ```{r}
 
-# For post-1888
+#5 For post-1888
 post_1888_tidy <- post_1888 %>%
   unnest_tokens(word, News.Reports) %>%
   anti_join(all_stop_words, by = "word") %>%
   filter(str_length(word) > 1)
+```
+
+```{r}
+#6 Creating the DTM for pre-1888
+dtm_pre_1888 <- pre_1888_tidy %>%
+  count(file_name = File.Names, word) %>%  
+  cast_dtm(document = file_name, term = word, value = n)
 
 ```
+
+```{r}
+# 7 Creating the DTM for post-1888
+dtm_post_1888 <- post_1888_tidy %>%
+  count(file_name = File.Names, word) %>%  
+  cast_dtm(document = file_name, term = word, value = n)
+
+```
+
+```{r}
+#8 Applying LDA to the pre-1888 DTM
+lda_pre_1888 <- LDA(dtm_pre_1888, k = 8, control = list(seed = 1234))
+
+```
+
+```{r}
+#9 Applying LDA to the post-1888 DTM
+lda_post_1888 <- LDA(dtm_post_1888, k = 8, control = list(seed = 1234))
+```
+
+```{r}
+
+```
+
+```{r}
+#10 Analyzing topics by extracting the terms for each topic and their probabilities
+library(broom)
+
+topics_pre_1888 <- tidy(lda_pre_1888, matrix = "beta")
+topics_post_1888 <- tidy(lda_post_1888, matrix = "beta")
+
+```
+
+```{r}
+#11 Filter topics for pre-1888
+top_terms_pre_1888 <- topics_pre_1888 %>%
+  filter(topic %in% 1:5) %>%
+  group_by(topic) %>%
+  top_n(5, beta) %>%
+  ungroup() %>%
+  arrange(topic, desc(beta))
+
+```
+
+```{r}
+# Filter topics for post-1888
+top_terms_post_1888 <- topics_post_1888 %>%
+  filter(topic %in% 1:5) %>%
+  group_by(topic) %>%
+  top_n(5, beta) %>%
+  ungroup() %>%
+  arrange(topic, desc(beta))
+
+```
+
+```{r}
+library(ggplot2)
+library(tidytext) 
+
+ggplot(top_terms_pre_1888, aes(x = beta, y = reorder_within(term, beta, topic), fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free_y") +
+  scale_y_reordered() +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(size = 10),
+    axis.text.y = element_text(size = 10),
+    strip.text = element_text(size = 12)
+  ) +
+  labs(x = "Beta", y = "Terms", title = "Top Terms per Topic in Pre-1888")
+
+```
+
+```{r}
+library(ggplot2)
+library(tidytext)
+
+ggplot(top_terms_post_1888, aes(x = beta, y = reorder_within(term, beta, topic), fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free_y") +
+  scale_y_reordered() +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(size = 10),
+    axis.text.y = element_text(size = 10),
+    strip.text = element_text(size = 12)
+  ) +
+  labs(x = "Beta", y = "Terms", title = "Top Terms per Topic in Post 1888")
+
+```
+
+The topics covered in the pre-1888 data was about a variety of subjects, including legal proceedings, notable individuals, societal institutions, health and medical news, and crime reports. The discussions seemed more diverse, covering different societal elements without a dominating, singular focus.
+
+Post-1888 Findings shows a clear thematic shift toward crime and public safety is evident, with multiple topics directly or indirectly referencing elements of the Jack the Ripper case. The geographical focus on Whitechapel and the recurrence of words like "ripper" and "jack" show a concentrated media interest in the murders. The word "woman" frequently appearing in the context of street and murder suggests a heightened discourse on women's safety and victimhood, specifically in relation to the Ripper case.
+
+Before 1888, the spread of topics indicates a broader range of interests and a more evenly distributed public discourse. However, after 1888, the discourse narrows significantly, with the Ripper case becoming a central theme, influencing the frequency and context of terms associated with crime, policing, and societal safety.
