@@ -53,3 +53,27 @@ tidy_casebook <- casebook_final_2 %>%
   anti_join(data.frame(word = stopwords::stopwords(language = "en", source = "snowball")), by = "word")  
 
 ```
+
+```{r}
+#5 Defining keywords and filter texts for ripper and sex workers
+keywords_jack <- c("jack the ripper", "jack", "murderer", "villain", "madman", "mystery", 
+                   "killer", "ripper", "assassin", "butcher", "bogey man", "Whitechapel Murderer", "leather Apron")
+keywords_victims <- c("victim", "sex worker", "prostitute", "deceased", "body", "woman", 
+                      "women", "lady", "ladies", "alone", "public woman", "public", 
+                      "public women", "dead woman", "corpse", "girl", "she", "her", 
+                      "ill repute", "streetwalker", "harlot", "fallen")
+
+
+```
+
+```{r}
+#6 Counting occurrences of each
+jack_texts <- tidy_casebook %>%
+  filter(str_detect(word, paste(keywords_jack, collapse = "|")))
+victim_texts <- tidy_casebook %>%
+  filter(str_detect(word, paste(keywords_victims, collapse = "|")))
+
+jack_count <- nrow(jack_texts)
+victim_count <- nrow(victim_texts)
+
+```
