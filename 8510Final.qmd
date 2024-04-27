@@ -1,7 +1,7 @@
 ---
-title: "Final"
-format: html
-editor: visual
+title: "Final Project"
+author: "Megha Khanna"
+date: "04/15/2024"
 ---
 
 ## 
