@@ -77,3 +77,22 @@ jack_count <- nrow(jack_texts)
 victim_count <- nrow(victim_texts)
 
 ```
+
+```{r}
+#7 Word frequency analysis for each and combined
+jack_word_freq <- jack_texts %>%
+  count(word, sort = TRUE) %>%
+  top_n(10, n) %>%
+  mutate(frequency = n / sum(n))
+
+victim_word_freq <- victim_texts %>%
+  count(word, sort = TRUE) %>%
+  top_n(10, n) %>%
+  mutate(frequency = n / sum(n))
+
+combined_top10_freq <- full_join(jack_word_freq, victim_word_freq, by = "word", suffix = c("_jack", "_victim"))
+
+jack_word_freq$dataset <- "Jack" 
+victim_word_freq$dataset <- "Victim"
+
+```
