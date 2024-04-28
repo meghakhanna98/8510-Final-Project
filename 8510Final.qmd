@@ -18,6 +18,10 @@ The infamous Jack the Ripper murders of 1888, targeting several sex workers in L
 
 This analysis aims to explore the differential portrayal of Jack the Ripper compared to his victims through the lens of historical newspaper articles. By analyzing the frequency and context of words used, we can gain insights into the narrative and societal perceptions constructed by the media of that era. The other half of the analysis looks at the pre and post year 1888 and how the narratives related to crimes have significantly changes with the sensationalism of ripper crimes.
 
+##Historical Background
+
+The analysis delves into the socio-political atmosphere of London in the late 19th century, emphasizing the role of media in shaping the narrative around the Ripper murders. Walkowitz points out that the press sensationalized the events, thereby embedding a fear of male violence deep within the public consciousness. This sensationalism contributed to a moral panic that framed the city as a perilous place for women​​. Walkowitz argues that over the past century, Jack the Ripper has been transformed into a mythical figure representing male violence against women. This transformation has permeated cultural narratives, impacting how society views and treats women, especially in urban settings​​.
+
 ```{r}
 #1 Loading libraries
 library(tm)
