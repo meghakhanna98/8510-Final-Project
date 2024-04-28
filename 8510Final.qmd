@@ -110,6 +110,13 @@ ggplot(combined_top10_freq, aes(x = reorder(word, frequency), y = frequency, fil
 
 ```
 
+My analysis of the terms used to describe Jack the Ripper and his victims revealed a striking disparity, potentially highlighting an imbalance in media coverage. The data suggests a focus on the sensational aspects of the murderer's identity ("ripper", "butchere", "assassin" "mystery") compared to the generic and impersonal terms used for the victims like "woman", "public". This context highlights a narrative that prioritizes the criminal's story over humanizing the victims.
+
+This aligns with Warkentin's observation in '“Jack the Ripper” Strikes Again' of the glorification of the Ripper and the trivialization of his female victims. Originally portrayed as a near-heroic figure, the Ripper contrasted sharply with the derogatory depictions of his victims, mostly sex workers. This narrative arguably served to enforce societal norms and control women's behavior.
+
+Further supporting this analysis, Wattis' work 'Analysing local newspaper coverage of murders
+involving street sex workers' situates these local cases within a broader historical context. She identifies patterns established during the Whitechapel murders that persist: demonizing victims and glorifying perpetrators. Wattis references research demonstrating such media portrayals often reflect societal misogyny and perpetuate harmful stereotypes about sex workers.
+
 ```{r}
 #1 Loading libraries
 library(tidytext)
@@ -265,18 +272,16 @@ Post-1888 Findings shows a clear thematic shift toward crime and public safety i
 
 Before 1888, the spread of topics indicates a broader range of interests and a more evenly distributed public discourse. However, after 1888, the discourse narrows significantly, with the Ripper case becoming a central theme, influencing the frequency and context of terms associated with crime, policing, and societal safety.
 
+Conclusion -
+
+Through text analysis, I was able to find that the language used suggests a societal fascination with the macabre details of the crimes and the Ripper's enigmatic persona. The victims, however, are portrayed in a way that may reinforce stigmas, particularly against marginalized women or probably just women with simply no compassion. This data reflects a potential societal tendency to sensationalize criminals, potentially hindering a compassionate and just representation of victims, especially sex workers.
+
 Bibliography-
 
 “Ripper Press Reports Dataset · Brandon Walsh.” n.d. Walshbr.com. Accessed April 28, 2024. https://walshbr.com/blog/ripper-dataset/.
 
 ‌“Casebook: Jack the Ripper - Main.” n.d. Www.casebook.org. https://www.casebook.org.		
 
-Elyssa Warkentin (2010) “Jack the Ripper” Strikes Again, Feminist Media Studies, 10:1, 35-49, DOI: 10.1080/14680770903457097
+Elyssa Warkentin (2010) "Jack the Ripper” Strikes Again", Feminist Media Studies, 10:1, 35-49, DOI: 10.1080/14680770903457097				
 
-				
-
-			
-
-		
-
-	
+Louise Wattis (2022) Analysing local newspaper coverage of murders involving street sex workers, Feminist Media Studies, 22:2, 425-440, DOI: 10.1080/14680777.2020.1804975
