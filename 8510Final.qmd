@@ -164,6 +164,7 @@ all_stop_words <- bind_rows(stop_words, custom_stop_words) %>%
 ```
 
 #Now I will code clean up my pre and post 1888 news reports by extracting individual words, removing common stop words, and filtering out very short words. This leaves a dataset of cleaned words ready for topic modeling.
+
 ```{r}
 #4 For pre-1888
 pre_1888_tidy <- pre_1888 %>%
@@ -181,7 +182,8 @@ post_1888_tidy <- post_1888 %>%
   filter(str_length(word) > 1)
 ```
 
-# Now I will use `cast_dtm()` to turn the words into a dtm for each datset. 
+#Now I will use `cast_dtm()` to turn the words into a dtm for each datset.
+
 ```{r}
 #6 Creating the DTM for pre-1888
 dtm_pre_1888 <- pre_1888_tidy %>%
@@ -309,6 +311,3 @@ Walkowitz, Judith R. “Jack the Ripper and the Myth of Male Violence.” *Femi
 Warkentin, Elyssa. 2010. “‘Jack the Ripper’ Strikes Again.” *Feminist Media Studies* 10 (1): 35–49. https://doi.org/10.1080/14680770903457097.
 
 Wattis, Louise. 2020. “Analysing Local Newspaper Coverage of Murders Involving Street Sex Workers.” *Feminist Media Studies* 22 (2): 1–16. https://doi.org/10.1080/14680777.2020.1804975.
-
-
-
