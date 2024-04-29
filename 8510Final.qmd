@@ -278,6 +278,8 @@ ggplot(top_terms_post_1888, aes(x = beta, y = reorder_within(term, beta, topic),
 
 In her essay, "Murder for a Penny: Jack the Ripper and the Structural Impact of Sensational Reporting," A. Luxx Mishou argues that the infamous Jack the Ripper murders weren't just a media frenzy – they fundamentally reshaped Victorian-era penny newspapers. While public fascination with crime existed before (think Mary Ann Cotton or Dr. Thomas Neill Cream), the Ripper case became a turning point for penny press sensationalism.
 
+Drew Gray in 'London's Shadows' compare the Ripper coverage to other sensational crimes of the era, suggesting that the Ripper's enduring fame owes much to the timing of his murders—coinciding with the rise of mass-market journalism—and the Victorian fascination with crime and morality tales.
+
 This wasn't just about selling papers. My topic modeling analysis reveals a stark difference in pre- and post-Ripper news reporting. Prior to 1888, the topics were diverse: legal proceedings, prominent figures, health news, and a variety of crimes. Public discourse seemed more balanced.
 
 But post-1888, the focus shifted dramatically. Crime and public safety dominated, often referencing the Ripper murders directly or indirectly. The geographic concentration on Whitechapel and frequent use of "ripper" and "jack" expose a media fixated on these atrocities. Significantly, the word "woman" spiked in the context of "street" and "murder," suggesting a heightened focus on female vulnerability due to the Ripper's victims.
@@ -294,14 +296,19 @@ These findings reflect a broader historical and cultural impact, suggesting that
 
 Bibliography-
 
+“Casebook: Jack the Ripper - Main.” n.d. Www.casebook.org. https://www.casebook.org.
+
+Gray, Drew B, and Bloomsbury Publishing. 2013. London’s Shadows : The Dark Side of the Victorian City. London: Bloomsbury.
+
+Mishou , A. Luxx . n.d. “‘Murder for a Penny: Jack the Ripper and the Structural Impact of Sensational Reporting’ \| Wilkie Collins Society.” https://wilkiecollinssociety.org/murder-for-a-penny-jack-the-ripper-and-the-structural-impact-of-sensational-reporting/.
+
 “Ripper Press Reports Dataset · Brandon Walsh.” n.d. Walshbr.com. Accessed April 28, 2024. https://walshbr.com/blog/ripper-dataset/.
 
-‌“Casebook: Jack the Ripper - Main.” n.d. Www.casebook.org. https://www.casebook.org.
+Walkowitz, Judith R. “Jack the Ripper and the Myth of Male Violence.” *Feminist Studies* 8, no. 3 (1982): 543–74. https://doi.org/10.2307/3177712.
 
 Warkentin, Elyssa. 2010. “‘Jack the Ripper’ Strikes Again.” *Feminist Media Studies* 10 (1): 35–49. https://doi.org/10.1080/14680770903457097.
 
 Wattis, Louise. 2020. “Analysing Local Newspaper Coverage of Murders Involving Street Sex Workers.” *Feminist Media Studies* 22 (2): 1–16. https://doi.org/10.1080/14680777.2020.1804975.
 
-Walkowitz, Judith R. “Jack the Ripper and the Myth of Male Violence.” *Feminist Studies* 8, no. 3 (1982): 543–74. https://doi.org/10.2307/3177712.
 
-Mishou , A. Luxx . n.d. “‘Murder for a Penny: Jack the Ripper and the Structural Impact of Sensational Reporting’ \| Wilkie Collins Society.” https://wilkiecollinssociety.org/murder-for-a-penny-jack-the-ripper-and-the-structural-impact-of-sensational-reporting/.
+
