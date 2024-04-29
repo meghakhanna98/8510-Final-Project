@@ -151,7 +151,7 @@ head(casebook.new)
 ```
 
 ```{r}
-#3 Filtering before and after 1888
+#3 I plan to filter the news articles into two separate datasets: one for articles published before 1888 and another for those published after. I will then combine the stop word lists for both datasets and remove any duplicates.
 
 pre_1888 <- casebook.new %>% filter(Year < 1888)
 post_1888 <- casebook.new %>% filter(Year >= 1888)
@@ -163,6 +163,7 @@ all_stop_words <- bind_rows(stop_words, custom_stop_words) %>%
 
 ```
 
+#Now I will code clean up my pre and post 1888 news reports by extracting individual words, removing common stop words, and filtering out very short words. This leaves a dataset of cleaned words ready for topic modeling.
 ```{r}
 #4 For pre-1888
 pre_1888_tidy <- pre_1888 %>%
@@ -173,7 +174,6 @@ pre_1888_tidy <- pre_1888 %>%
 ```
 
 ```{r}
-
 #5 For post-1888
 post_1888_tidy <- post_1888 %>%
   unnest_tokens(word, News.Reports) %>%
@@ -181,6 +181,7 @@ post_1888_tidy <- post_1888 %>%
   filter(str_length(word) > 1)
 ```
 
+# Now I will use `cast_dtm()` to turn the words into a dtm for each datset. 
 ```{r}
 #6 Creating the DTM for pre-1888
 dtm_pre_1888 <- pre_1888_tidy %>%
