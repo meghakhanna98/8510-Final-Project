@@ -279,7 +279,11 @@ From a broad spectrum of topics to a Ripper-centric narrative, the data paints a
 
 Conclusion -
 
-Through text analysis, I was able to find that the language used suggests a societal fascination with the macabre details of the crimes and the Ripper's enigmatic persona. The victims, however, are portrayed in a way that may reinforce stigmas, particularly against marginalized women or probably just women with simply no compassion. This data reflects a potential societal tendency to sensationalize criminals, potentially hindering a compassionate and just representation of victims, especially sex workers.
+This study has illuminated the profound influence that sensational journalism, exemplified by the coverage of Jack the Ripper in 1888, had on societal perceptions of crime and victimhood. Through a detailed textual analysis of historical newspaper articles, the research demonstrated a stark shift in the frequency and context of terms associated with Jack the Ripper compared to those referring to his victims. Notably, the language used not only prioritized the narrative of the criminal over the victims but also depicted the latter in terms that often reinforced societal stigmas against marginalized groups, particularly sex workers.
+
+The analysis further revealed a significant transformation in the thematic focus of newspaper reporting before and after the Ripper's crimes. The year 1888 marked a pivotal moment, as public discourse became dominated by themes of crime and safety, disproportionately magnifying fears and perpetuating a narrative that focused heavily on sensationalism and moral judgment. This shift underscores the role of the media in shaping not only public perceptions but also societal discourse at large.
+
+These findings reflect a broader historical and cultural impact, suggesting that the media's portrayal of such events can have lasting implications on societal views towards crime and those involved, whether as perpetrators or victims. By emphasizing the criminal's mystique and reducing the victims to mere footnotes in their own tragedies, the newspapers of the time contributed to a culture that viewed sensational stories as a means of entertainment rather than opportunities for critical reflection or social change.
 
 Bibliography-
 
