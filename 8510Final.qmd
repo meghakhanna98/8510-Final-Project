@@ -22,6 +22,8 @@ This analysis aims to explore the differential portrayal of Jack the Ripper comp
 
 The analysis delves into the socio-political atmosphere of London in the late 19th century, emphasizing the role of media in shaping the narrative around the Ripper murders. Walkowitz points out that the press sensationalized the events, thereby embedding a fear of male violence deep within the public consciousness. This sensationalism contributed to a moral panic that framed the city as a perilous place for women​​. Walkowitz argues that over the past century, Jack the Ripper has been transformed into a mythical figure representing male violence against women. This transformation has permeated cultural narratives, impacting how society views and treats women, especially in urban settings​​.
 
+\## Texual Analysis
+
 ```{r}
 #1 Loading libraries
 library(tm)
@@ -113,11 +115,13 @@ ggplot(combined_top10_freq, aes(x = reorder(word, frequency), y = frequency, fil
 
 ```
 
-My analysis of the terms used to describe Jack the Ripper and his victims revealed a striking disparity, potentially highlighting an imbalance in media coverage. The data suggests a focus on the sensational aspects of the murderer's identity ("ripper", "butchere", "assassin" "mystery") compared to the generic and impersonal terms used for the victims like "woman", "public". This context highlights a narrative that prioritizes the criminal's story over humanizing the victims.
+My analysis of the terms used to describe Jack the Ripper and his victims revealed a striking disparity, potentially highlighting an imbalance in media coverage. The data suggests a focus on the sensational aspects of the murderer's identity ("ripper", "butchere", "assassin", "mystery") compared to the generic and impersonal terms used for the victims like "woman", "another", "public". This context highlights a narrative that prioritizes the criminal's story over humanizing the victims.
 
 This aligns with Warkentin's observation in '“Jack the Ripper” Strikes Again' of the glorification of the Ripper and the trivialization of his female victims. Originally portrayed as a near-heroic figure, the Ripper contrasted sharply with the derogatory depictions of his victims, mostly sex workers. This narrative arguably served to enforce societal norms and control women's behavior.
 
 Further supporting this analysis, Wattis' work 'Analysing local newspaper coverage of murders involving street sex workers' situates these local cases within a broader historical context. She identifies patterns established during the Whitechapel murders that persist: demonizing victims and glorifying perpetrators. Wattis references research demonstrating such media portrayals often reflect societal misogyny and perpetuate harmful stereotypes about sex workers.
+
+This brings us to the second part of our project where I will utilize topic modelling to see the change in narratives before and after 1888.
 
 ```{r}
 #1 Loading libraries
