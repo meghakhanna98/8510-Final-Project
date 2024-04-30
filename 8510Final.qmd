@@ -119,9 +119,9 @@ ggplot(combined_top10_freq, aes(x = reorder(word, frequency), y = frequency, fil
 
 My analysis of the terms used to describe Jack the Ripper and his victims revealed a striking disparity, potentially highlighting an imbalance in media coverage. The data suggests a focus on the sensational aspects of the murderer's identity ("ripper", "butchere", "assassin", "mystery") compared to the generic and impersonal terms used for the victims like "woman", "another", "public". This context highlights a narrative that prioritizes the criminal's story over humanizing the victims.
 
-This aligns with Warkentin's observation in '“Jack the Ripper” Strikes Again' of the glorification of the Ripper and the trivialization of his female victims. Originally portrayed as a near-heroic figure, the Ripper contrasted sharply with the derogatory depictions of his victims, mostly sex workers. This narrative arguably served to enforce societal norms and control women's behavior.
+This aligns with Warkentin's observation in '“Jack the Ripper” Strikes Again' of the glorification of the Ripper and the trivialization of his female victims. Originally portrayed as a near-heroic figure, the Ripper contrasted sharply with the derogatory depictions of his victims, mostly sex workers. This narrative arguably served to enforce societal norms and control women's behavior.(Warkentin, 37)
 
-Further supporting this analysis, Wattis' work 'Analysing local newspaper coverage of murders involving street sex workers' situates these local cases within a broader historical context. She identifies patterns established during the Whitechapel murders that persist: demonizing victims and glorifying perpetrators. Wattis references research demonstrating such media portrayals often reflect societal misogyny and perpetuate harmful stereotypes about sex workers.()
+Further supporting this analysis, Wattis' work 'Analysing local newspaper coverage of murders involving street sex workers' situates these local cases within a broader historical context. She identifies patterns established during the Whitechapel murders that persist: demonizing victims or 'denial of victimhood' and glorifying perpetrators. Wattis references research demonstrating such media portrayals often reflect societal misogyny and perpetuate harmful stereotypes about sex workers.(Wattis, 426)
 
 ##Topic Modelling
 
