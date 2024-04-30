@@ -182,7 +182,7 @@ post_1888_tidy <- post_1888 %>%
   filter(str_length(word) > 1)
 ```
 
-#Now I will use `cast_dtm()` to turn the words into a dtm for each datset.
+#Now I will use cast_dtm to turn the words into a dtm for each datset.
 
 ```{r}
 #6 Creating the DTM for pre-1888
@@ -278,15 +278,15 @@ ggplot(top_terms_post_1888, aes(x = beta, y = reorder_within(term, beta, topic),
 
 ```
 
-In her essay, "Murder for a Penny: Jack the Ripper and the Structural Impact of Sensational Reporting," A. Luxx Mishou argues that the infamous Jack the Ripper murders weren't just a media frenzy – they fundamentally reshaped Victorian-era penny newspapers. While public fascination with crime existed before (think Mary Ann Cotton or Dr. Thomas Neill Cream), the Ripper case became a turning point for penny press sensationalism.
-
-Drew Gray in 'London's Shadows' compare the Ripper coverage to other sensational crimes of the era, suggesting that the Ripper's enduring fame owes much to the timing of his murders—coinciding with the rise of mass-market journalism—and the Victorian fascination with crime and morality tales. He underscores the dual role of the Victorian press during the Jack the Ripper murders. While capitalizing on the sensational nature of the murders to increase sales, the press also played a crucial role in highlighting and potentially influencing social reforms and public perceptions of law enforcement and government accountability. Gray portrays the press as a powerful entity that shaped public discourse and had a lasting impact on the structure of modern journalism​​.
+In her essay, "Murder for a Penny: Jack the Ripper and the Structural Impact of Sensational Reporting," A. Luxx Mishou argues that the infamous Jack the Ripper murders weren't just a media frenzy – they fundamentally reshaped Victorian-era penny newspapers. While public fascination with crime existed before (Mary Ann Cotton or Dr. Thomas Neill Cream), the Ripper case became a turning point for penny press sensationalism.
 
 This wasn't just about selling papers. My topic modeling analysis reveals a stark difference in pre- and post-Ripper news reporting. Prior to 1888, the topics were diverse: legal proceedings, prominent figures, health news, and a variety of crimes. Public discourse seemed more balanced.
 
 But post-1888, the focus shifted dramatically. Crime and public safety dominated, often referencing the Ripper murders directly or indirectly. The geographic concentration on Whitechapel and frequent use of "ripper" and "jack" expose a media fixated on these atrocities. Significantly, the word "woman" spiked in the context of "street" and "murder," suggesting a heightened focus on female vulnerability due to the Ripper's victims.
 
 From a broad spectrum of topics to a Ripper-centric narrative, the data paints a clear picture. Penny press sensationalism narrowed public discourse, highlighting not just the murders, but also the underlying anxieties about crime, policing, and women's safety in Victorian society. The press contributed to a lasting image of the Ripper as a shadowy, almost supernatural figure. This portrayal captivated the public’s imagination and solidified the murderer's place as a figure of enduring mystery and horror in popular culture.
+
+Drew Gray in 'London's Shadows' compare the Ripper coverage to other sensational crimes of the era, suggesting that the Ripper's enduring fame owes much to the timing of his murders—coinciding with the rise of mass-market journalism—and the Victorian fascination with crime and morality tales. He underscores the dual role of the Victorian press during the Jack the Ripper murders. While capitalizing on the sensational nature of the murders to increase sales, the press also played a crucial role in highlighting and potentially influencing social reforms and public perceptions of law enforcement and government accountability. Gray portrays the press as a powerful entity that shaped public discourse and had a lasting impact on the structure of modern journalism​​.
 
 Conclusion -
 
