@@ -163,7 +163,7 @@ all_stop_words <- bind_rows(stop_words, custom_stop_words) %>%
 
 ```
 
-#Now I will code clean up my pre and post 1888 news reports by extracting individual words, removing common stop words, and filtering out very short words. This leaves a dataset of cleaned words ready for topic modeling.
+#Now I will code clean up my pre and post 1888 news reports by extracting individual words, removing common stop words, and filtering out short words from the rows. This leaves a dataset of cleaned words ready for topic modeling.
 
 ```{r}
 #4 For pre-1888
