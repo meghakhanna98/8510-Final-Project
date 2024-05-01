@@ -35,6 +35,7 @@ library(tidyr)
 library(readr)
 library(stringr)
 library(tidyverse)
+library(word2vec)
 
 ```
 
