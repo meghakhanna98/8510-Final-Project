@@ -242,7 +242,7 @@ top_terms_post_1888 <- topics_post_1888 %>%
 ```
 
 ```{r}
-#
+#13 Plotting for each
 library(ggplot2)
 library(tidytext) 
 
