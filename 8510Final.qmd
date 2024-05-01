@@ -22,8 +22,7 @@ This analysis aims to explore the differential portrayal of Jack the Ripper comp
 
 The analysis delves into the socio-political atmosphere of London in the late 19th century, emphasizing the role of media in shaping the narrative around the Ripper murders. Walkowitz points out that the press sensationalized the events, thereby embedding a fear of male violence deep within the public consciousness. This sensationalism contributed to a moral panic that framed the city as a perilous place for women​​. Walkowitz argues that over the past century, Jack the Ripper has been transformed into a mythical figure representing male violence against women. This transformation has permeated cultural narratives, impacting how society views and treats women, especially in urban settings​​.(Walkowitz, 544)
 
-\## Texual Analysis
-
+## Data Manipulation and analyzing the Word Frequencies
 ```{r}
 #1 Loading libraries
 library(tm)
