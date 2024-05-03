@@ -24,6 +24,7 @@ The analysis delves into the socio-political atmosphere of London in the late 19
 
 ## Data Manipulation and analyzing the Word Frequencies
 ```{r}
+#| echo: false
 #1 Loading libraries
 library(tm)
 library(topicmodels)
